@@ -1,0 +1,9 @@
+grammar boleiros.language.Boleiros with org.eclipse.xtext.common.Terminals
+
+generate boleiros "http://www.language.boleiros/Boleiros"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
